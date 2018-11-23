@@ -5,8 +5,10 @@
 #define NOMINMAX
 
 #include <stdio.h>
+#include <windows.h>
 
-#include "loader.cpp"
+#include "win32.cpp"
+#include "memoryImpl.cpp"
 
 #else
 
@@ -17,11 +19,16 @@
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmd, int prevcmd)
 {
+#ifndef RELEASE
+
 	AllocConsole();
 
 	freopen("conin$", "r", stdin);
 	freopen("conout$", "w", stdout);
 	freopen("conout$", "w", stderr);
+
+#endif // !RELEASE
+
 
 	Windows dataW = windowsData(hInstance, hPrevInstance, cmd, prevcmd);
 

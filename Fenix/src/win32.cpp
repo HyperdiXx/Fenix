@@ -1,7 +1,6 @@
 
-#pragma once
 
-#include "loader.h"
+#include "win32.h"
 
 
 Windows windowsData(HINSTANCE instance, HINSTANCE prevInstance, LPSTR commandLine, int cmdShow) 
