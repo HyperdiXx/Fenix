@@ -133,7 +133,7 @@ union Mat4x4
 	float e2[4][4];
 };
 
-union Quat 
+union Quaternion 
 {
 	struct 
 	{
@@ -153,7 +153,7 @@ struct Form
 {
 	Vec3 pos;
 	Vec3 scale;
-	Quat rot;
+    Quaternion rot;
 };
 
 union Rect
@@ -171,7 +171,7 @@ union Rect
 
 	struct
 	{
-		float center, top, bottom, right;
+		float centerf, topf, bottomf, rightf;
 	};
 
 	float e[4];

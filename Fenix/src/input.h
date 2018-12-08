@@ -3,5 +3,5 @@
 
 struct Input
 {
-
+    bool isResized;
 };

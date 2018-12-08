@@ -128,18 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\applicationd3d.cpp" />
+    <ClCompile Include="src\audio.cpp" />
+    <ClCompile Include="src\basictypes.cpp" />
     <ClCompile Include="src\entitycomponent.cpp" />
-    <ClCompile Include="src\memoryAll.cpp" />
-    <ClCompile Include="src\memoryImpl.cpp" />
-    <ClCompile Include="src\system.cpp" />
-    <ClCompile Include="src\win32.cpp" />
+    <ClCompile Include="src\hotload.cpp" />
+    <ClCompile Include="src\memory.cpp" />
+    <ClCompile Include="src\memoryallocators.cpp" />
+    <ClCompile Include="src\systemwin32.cpp" />
+    <ClCompile Include="src\platformlayerwin32.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\window.cpp" />
+    <ClCompile Include="src\thread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\input.h" />
     <ClInclude Include="src\math.h" />
-    <ClInclude Include="src\win32.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

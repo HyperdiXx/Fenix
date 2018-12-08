@@ -1,4 +1,6 @@
 
+
+
 #ifndef RELEASE
 
 #define WIN32_LEAN_AND_MEAN
@@ -7,12 +9,13 @@
 #include <stdio.h>
 #include <windows.h>
 
-#include "win32.cpp"
-#include "memoryImpl.cpp"
+#include "platformlayerwin32.cpp"
+#include "memory.cpp"
+
 
 #else
 
-#include "app.cpp"
+#include "applicationd3d.cpp"
 
 #endif // !RELEASE
 
@@ -36,7 +39,14 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmd, in
 	GetSystemInfo(&sysInfo);
 	int coreCount = sysInfo.dwNumberOfProcessors;
 
+    //Threads th;
 
+    bool isRunning = true;
+
+    while (isRunning)
+    {
+
+    }
 
 
 
